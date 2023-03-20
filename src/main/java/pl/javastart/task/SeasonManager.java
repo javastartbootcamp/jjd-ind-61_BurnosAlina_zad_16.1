@@ -1,5 +1,6 @@
 package pl.javastart.task;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SeasonManager {
@@ -14,9 +15,7 @@ public class SeasonManager {
     private void printMonthsForSeason(Season valueForSeason) {
         System.out.println("W tej porze roku są następujące miesiące:");
         String[] months = valueForSeason.getMonths();
-        for (String month : months) {
-            System.out.println(month);
-        }
+        System.out.println(Arrays.toString(months));
     }
 
     private String getSeason(Scanner scanner) {
